@@ -78,6 +78,23 @@ body {
     background-color: #C7A156;
 }
 
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+.hero__info {
+    flex: 1 1 25em;
+}
+
+.hero__img {
+    width: 100%;
+    max-width: 50em;
+    flex: 1 1 auto;
+}
+
 @media (min-width: 48em) {
     .header {
         background: linear-gradient(180deg, rgba(255, 255, 255, 0.084) 0%, rgba(196, 196, 196, 0.105) 17.23%, rgba(196, 196, 196, 0) 100%);
@@ -100,4 +117,5 @@ body {
         flex-direction: row;
         flex-wrap: wrap;
     }
+
 }
