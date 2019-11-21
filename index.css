@@ -64,7 +64,7 @@ body {
 }
 
 .header-hamburger-button {
-    display: flex;
+    display: none;
     justify-content: center;
     flex-direction: row;
     align-items: center;
@@ -73,27 +73,28 @@ body {
     position: relative;
     width: 3em;
     height: 3em;
-    border-top: 2em;
-    border-bottom: 2em;
-    border-color: #ffffff;
+    border: none;
+    font-size: 1em;
 }
 
 .header-hamburger-button::before {
-    display: flex;
+    display: block;
     content: "";
     background-color: #ffffff;
-    width: 2em;
+    width: 100%;
     height: 0.2em;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    border-bottom: #ffffff;
-    border-top: #ffffff;
-    border-bottom-width: 2em;
-    border-top-width: 2em;
+    border-radius: 0.1em;
+    box-shadow:
+        0 0.55em #ffffff,
+        0 -0.55em #ffffff;
 }
 
 .header--collapsed .header__close-button, .header--collapsed .header__right-column {
     display: none;
+}
+
+.header--collapsed .header-hamburger-button {
+    display: flex;
 }
 
 .header-close-button::before, .header-close-button::after {
@@ -170,64 +171,39 @@ body {
     flex: 1 1 auto;
 }
 
-.main-news {
-    display: block;
-}
-
-.news__title {
-    padding: 1rem;
-    margin: 0.5rem -1rem;
-}
-
-.news-title {
+.newses__title {
+    margin: 1.5em 0;
     color: #C7A156;
     font-size: 1em;
 }
 
-.news__block {
-    padding: 0.5rem;
-    margin: -0.5rem -0.5rem 1rem -0.5rem;
+.newses__news {
+    margin-bottom: 1.5em;
 }
 
-.news-block {
-    display: block;
-}
-
-.news-block__name {
-    padding: 0.5rem;
-    margin: 0 -0.5rem;
-}
-
-.news-block-name {
-    font-size: 1.5rem;
-}
-
-.news-block-text {
-    padding: 0.5rem 0;
-    margin: 0;
-    font-size: 1rem;
-}
-
-.news-block__date {
-    padding: 0.5rem;
-    margin: 0 -0.5rem 0 -0.5rem;
-}
-
-.news-block-date {
-    display: flex;
-    justify-content: flex-end;
-    color: #C7A156;
-    font-size: 1em;
-}
-
-.news__button-all-news {
-    padding: 0.5rem;
-    margin: 0 -0.5rem 0 -0.5rem;
-}
-
-.news-button-all-news {
+.news__name {
+    margin: 0.5em -0.5em;
+    font-size: 1.5em;
+    text-decoration: none;
     color: #ffffff;
-    font-size: 1.2em;
+    padding: 0.5em;
+}
+
+.news__text {
+    margin: 0.5em 0;
+}
+
+.news__date {
+    margin: 0.5em 0;
+    text-align: right;
+    color: #C7A156;
+}
+
+.newses__all-link {
+    padding: 0.5em;
+    margin: 0 -0.5em 0 -0.5em;
+    color: #ffffff;
+    text-decoration: none;
 }
 
 @media (min-width: 48em) {
@@ -247,6 +223,10 @@ body {
     }
 
     .header__close-button {
+        display: none;
+    }
+
+    .header--collapsed .header-hamburger-button {
         display: none;
     }
 
