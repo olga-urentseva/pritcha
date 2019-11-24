@@ -149,7 +149,7 @@ body {
 
 .button {
     border: none;
-    border-radius: 1em;
+    border-radius: 1em / 50%;
     padding: 0.5em 1em;
     background-color: #C7A156;
 }
@@ -171,6 +171,24 @@ body {
     flex: 1 1 auto;
 }
 
+.delimiter-after-hero {
+    margin: 0;
+    border: none;
+    border-top: 1px solid #3A3838;
+    position: relative;
+    overflow: visible;
+}
+
+.delimiter-after-hero::before {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2.5em;
+    bottom: 100%;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.04) 0%, rgba(196, 196, 196, 0) 100%);
+}
+
 .newses__title {
     margin: 1.5em 0;
     color: #C7A156;
@@ -179,6 +197,7 @@ body {
 
 .newses__news {
     margin-bottom: 1.5em;
+
 }
 
 .news__name {
@@ -204,6 +223,23 @@ body {
     margin: 0 -0.5em 0 -0.5em;
     color: #ffffff;
     text-decoration: none;
+}
+
+.newses__all-link::after {
+    content: "";
+    display: inline-block;
+    background-image: url("chevron.svg");
+    background-repeat: no-repeat no-repeat;
+    background-size: 0.8em 0.8em;
+    width: 0.8em;
+    height: 0.8em;
+    vertical-align: middle;
+}
+
+.newses__footer {
+    background-color: #C7A156;
+    padding: 0.5em 0;
+    border-radius: 0 0 1em 1em;
 }
 
 @media (min-width: 48em) {
