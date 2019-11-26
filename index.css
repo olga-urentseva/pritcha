@@ -300,6 +300,11 @@ body {
     padding: 0.5em;
 }
 
+.social-link__icon {
+    width: 3.5em;
+    height: 3.5em;
+}
+
 .social-link-vk-icon {
     margin-left: -0.5em;
 }
