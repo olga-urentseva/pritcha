@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "SPSL New Cyrillic";
+  src: url(spsl-new-cyrillic.woff2) format("woff2");
+  src: url(spsl-new-cyrillic.woff) format("woff");
+}
+
 * {
   box-sizing: border-box;
 }
@@ -10,7 +16,27 @@ body {
   font-size: 1rem;
   -webkit-font-smoothing: antialiased;
   margin: 0;
-  background-color: #0c0c0c;
+  background-color: #0e0d0d;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "SPSL New Cyrillic", serif;
+  font-weight: 100;
+}
+
+h2 {
+  font-size: 2em;
+  line-height: 1.2em;
+}
+
+h3 {
+  font-size: 1.5em;
+  line-height: 1em;
 }
 
 .container {
@@ -138,10 +164,11 @@ body {
 .header-menu__link {
   display: block;
   white-space: nowrap;
-  font-size: 1.5em;
   color: #ffffff;
   text-decoration: none;
   padding: 0.5rem 1rem;
+  font-family: "SPSL New Cyrillic", serif;
+  font-size: 2em;
 }
 
 .header__button {
@@ -153,8 +180,12 @@ body {
 .button {
   border: none;
   border-radius: 1em / 50%;
-  padding: 0.5em 1em;
-  background-color: #c7a156;
+  padding: 0.4em 0.5em;
+  background-color: #ac8c4c;
+  font-family: "SPSL New Cyrillic", serif;
+  font-size: 1.8em;
+  text-decoration: none;
+  color: #171717;
 }
 
 .hero {
@@ -166,6 +197,12 @@ body {
 
 .hero__info {
   flex: 1 1 25em;
+}
+
+.hero-info__title {
+  font-size: 5em;
+  text-transform: uppercase;
+  color: #ac8c4c;
 }
 
 .hero__img {
@@ -197,9 +234,8 @@ body {
 }
 
 .newses__title {
-  margin: 1.5em 0;
-  color: #c7a156;
-  font-size: 1em;
+  margin: 1.2em 0;
+  color: #ac8c4c;
 }
 
 .newses__news {
@@ -208,7 +244,10 @@ body {
 
 .news__name {
   margin: 0.5em -0.5em;
+  font-family: "SPSL New Cyrillic", serif;
+  text-transform: uppercase;
   font-size: 1.5em;
+  line-height: 1.2em;
   text-decoration: none;
   color: #ffffff;
   padding: 0.5em;
@@ -216,19 +255,22 @@ body {
 
 .news__text {
   margin: 0.5em 0;
+  line-height: 1.5em;
 }
 
 .news__date {
   margin: 0.5em 0;
   text-align: right;
-  color: #c7a156;
+  color: #ac8c4c;
 }
 
 .newses__all-link {
   padding: 0.5em;
   margin: 0 -0.5em 0 -0.5em;
-  color: #0c0c0c;
+  color: #171717;
   text-decoration: none;
+  font-family: "SPSL New Cyrillic", serif;
+  font-size: 1.5em;
 }
 
 .newses__all-link::after {
@@ -243,7 +285,7 @@ body {
 }
 
 .newses__footer {
-  background-color: #c7a156;
+  background-color: #ac8c4cd8;
   padding: 0.5em 0;
   border-radius: 0 0 1em 1em;
   margin-bottom: 5em;
