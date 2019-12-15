@@ -314,11 +314,15 @@ h3 {
   color: #c4c4c4;
 }
 
-.footer-links-column__apple-links {
-  margin: -0.5em -0.5em calc(-0.5em + 1em) -0.5em;
+.apple-links {
+  margin: -0.5em;
 }
 
-.apple-link {
+.footer-links-column__apple-links {
+  margin-bottom: 1em;
+}
+
+.apple-links__apple-link {
   background-repeat: no-repeat;
   width: 158px;
   height: 45px;
