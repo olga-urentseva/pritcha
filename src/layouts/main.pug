@@ -1,0 +1,69 @@
+doctype html
+html(lang='ru')
+  head
+    meta(charset='UTF-8')
+    title Притча :: Вокальный квартет Раифского Богородицкого монастыря
+    meta(name='viewport' content='width=device-width,initial-scale=1')
+    meta(name='keywords' content='притча, вокальный квартет, раифский монастырь, раифа')
+    link(rel='stylesheet' href='/index.css')
+  body
+    header.header.header--collapsed
+      .container
+        .header__wrapper
+          .header__left-column.header-left-column
+            a.header__logo.header-logo(href='/index.html')
+              img.header-logo__img(src='/pritcha-logo.svg' alt)
+            button.header__close-button.header-close-button
+            button.header__hamburger-button.header-hamburger-button
+          .header__right-column.header-right-column
+            nav.header__menu.header-menu
+              ul
+                li
+                  a.header-menu__link(href='/about.html') О коллективе
+                li
+                  a.header-menu__link(href) Музыка
+                li
+                  a.header-menu__link(href) Новости
+                li
+                  a.header-menu__link(href) Ближайшие выступления
+                li
+                  a.header-menu__link(href) Контакты
+            a.button.header__button(href='https://geo.music.apple.com/us/artist/pritcha/1465802523?mt=1&app=music' target='_blank') Слушать онлайн
+    main.content
+      block content
+    footer.footer
+      .footer__first-line
+        .container
+          .footer__columns.footer-columns
+            .footer__column.footer-info-column
+              img(src='/pritcha-logo.svg' alt='Логотип квартета Притча')
+              h3.left-column__tittle.
+                Вокальный квартет Раифского Богородицкого мужского монастыря
+            .footer__column.footer-contacts-column
+              h3.contacts-column__title Контакты
+              .contacts-column__contact.right-column__phone
+                img.contacts-column-icon(src='/call-icon.svg' alt)
+                .contacts-column-contact.
+                  +791769656 (руководитель квартета о. Сергий)
+              .contacts-column__contact.right-column__mail
+                img.contacts-column-icon(src='/mail-icon.svg' alt)
+                .contacts-column-contact pritcha@mail.ru
+              .contacts-column__contact.right-column__map
+                img.contacts-column-icon(src='/map-icon.svg' alt)
+                .contacts-column-contact.
+                  Россия, Республика Татарстан, Зеленодольский р-н, Раифский монастырь 422537
+
+            .footer__column.footer-links-column
+              .footer-links-column__apple-links
+                .apple-links
+                  a.apple-links__apple-link.apple-link-listen(href='https://geo.music.apple.com/us/artist/pritcha/1465802523?mt=1&app=music' target='_blank')
+                  a.apple-links__apple-link.apple-link-watch(href='https://geo.music.apple.com/us/music-video/%D1%86%D0%B0%D1%80%D0%B8%D1%86%D0%B5-%D0%BC%D0%BE%D1%8F-%D0%BF%D1%80%D0%B5%D0%B1%D0%BB%D0%B0%D0%B3%D0%B0%D1%8F/728504260?mt=5&app=music' target='_blank')
+              .footer-links-column__socials.socials
+                a.socials__social-link.vk-link(href='https://vk.com/qpritcha' target='_blank')
+                  img.social-link__icon.vk-icon(src='/vk-icon.svg' alt='иконка для ссылки на официальную группу квартета Притча на сайте vk.com')
+                a.socials__social-link.youtube-link(href='https://www.youtube.com/user/QuartetPritcha' target='_blank')
+                  img.social-link__icon.youtube-icon(src='/youtube-icon.svg' alt='иконка для ссылки на официальный канал квартета Притча на сайте Youtube.com')
+      .footer__second-line
+        .container
+          .footer__copyright Квартет “Притча” © 2019
+

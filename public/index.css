@@ -288,7 +288,6 @@ h3 {
   background-color: #ac8c4cd8;
   padding: 0.5em 0;
   border-radius: 0 0 1em 1em;
-  margin-bottom: 5em;
 }
 
 .footer__first-line {
@@ -378,6 +377,10 @@ h3 {
 .footer__copyright {
   color: #7b7b7b;
   padding: 2em 0 1em 0;
+}
+
+.content {
+  margin-bottom: 5em;
 }
 
 @media (min-width: 48em) {
