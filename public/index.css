@@ -169,6 +169,18 @@ h3 {
   padding: 0.5rem 1rem;
   font-family: "SPSL New Cyrillic", serif;
   font-size: 2em;
+  position: relative;
+}
+
+.header-menu__link:hover::after {
+  display: block;
+  content: "";
+  height: 0.2rem;
+  width: calc(100% - 2rem);
+  background-color: #ac8c4c;
+  position: absolute;
+  top: 100%;
+  left: 1rem;
 }
 
 .header__button {
