@@ -17,6 +17,9 @@ body {
   -webkit-font-smoothing: antialiased;
   margin: 0;
   background-color: #0e0d0d;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 h1,
@@ -39,6 +42,10 @@ h3 {
   line-height: 1em;
 }
 
+.content {
+  flex: 1 0 auto;
+}
+
 .container {
   max-width: 90em;
   margin: 0 auto;
@@ -47,6 +54,7 @@ h3 {
 
 .header {
   background-color: #171717;
+  flex: 0 0 auto;
 }
 
 .header__wrapper {
@@ -303,6 +311,10 @@ h3 {
   border-radius: 0 0 1em 1em;
 }
 
+.footer {
+  flex: 0 0 auto;
+}
+
 .footer__first-line {
   background-color: #171717;
 }
@@ -394,6 +406,7 @@ h3 {
 
 .content {
   margin-bottom: 5em;
+  flex: 1 1 auto;
 }
 
 .video {
