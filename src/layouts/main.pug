@@ -1,3 +1,5 @@
+block variables
+  - var page = null
 doctype html
 html(lang='ru')
   head
@@ -19,11 +21,20 @@ html(lang='ru')
             nav.header__menu.header-menu
               ul
                 li
-                  a.header-menu__link(href='/about.html') О коллективе
+                  - if (page === 'about')
+                    a.header-menu__link.header-menu__link--active(href='/about.html') О коллективе
+                  - else
+                    a.header-menu__link(href='/about.html') О коллективе
                 li
-                  a.header-menu__link(href) Музыка
+                  - if (page === 'music')
+                    a.header-menu__link.header-menu__link--active(href='/music.html') Музыка
+                  - else
+                    a.header-menu__link(href='/music.html') Музыка
                 li
-                  a.header-menu__link(href) Новости
+                  - if (page === 'news')
+                    a.header-menu__link.header-menu__link--active(href='/news.html') Новости
+                  - else
+                    a.header-menu__link(href='/news.html') Новости
                 li
                   a.header-menu__link(href) Ближайшие выступления
                 li

@@ -172,7 +172,8 @@ h3 {
   position: relative;
 }
 
-.header-menu__link:hover::after {
+.header-menu__link:hover::after,
+.header-menu__link.header-menu__link--active::after {
   display: block;
   content: "";
   height: 0.2rem;
