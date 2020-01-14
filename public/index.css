@@ -4,7 +4,7 @@
   src: url(/spsl-new-cyrillic.woff) format("woff");
 }
 
-* {
+*, *::before, *::after {
   box-sizing: border-box;
 }
 
