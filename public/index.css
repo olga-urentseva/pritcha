@@ -536,6 +536,14 @@ h3 {
   max-height: 30em;
 }
 
+.contacts-page__contacts {
+  margin-top: 1em;
+}
+
+.contacts-page__contact {
+  margin: 0;
+}
+
 @media (min-width: 48em) {
   .header {
     background: linear-gradient(

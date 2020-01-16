@@ -36,9 +36,15 @@ html(lang='ru')
                   - else
                     a.header-menu__link(href='/news.html') Новости
                 li
-                  a.header-menu__link(href) Ближайшие выступления
+                  - if (page === 'next')
+                    a.header-menu__link.header-menu__link--active(href='/next.html') Ближайшие выступления
+                  - else
+                    a.header-menu__link(href='/next.html') Ближайшие выступления
                 li
-                  a.header-menu__link(href) Контакты
+                  -if (page === 'contacts')
+                    a.header-menu__link.header-menu__link--active(href='/contacts.html') Контакты
+                  - else
+                    a.header-menu__link(href='/contacts.html') Контакты
             a.button.header__button(href='https://geo.music.apple.com/us/artist/pritcha/1465802523?mt=1&app=music' target='_blank') Слушать онлайн
     main.content
       block content
@@ -53,17 +59,16 @@ html(lang='ru')
             .footer__column.footer-contacts-column
               h3.contacts-column__title Контакты
               .contacts-column__contact.right-column__phone
-                img.contacts-column-icon(src='/call-icon.svg' alt)
+                img.contacts-column-icon(src='/call-icon.svg')
                 .contacts-column-contact.
                   +791769656 (руководитель квартета о. Сергий)
               .contacts-column__contact.right-column__mail
-                img.contacts-column-icon(src='/mail-icon.svg' alt)
+                img.contacts-column-icon(src='/mail-icon.svg')
                 .contacts-column-contact pritcha@mail.ru
               .contacts-column__contact.right-column__map
-                img.contacts-column-icon(src='/map-icon.svg' alt)
+                img.contacts-column-icon(src='/map-icon.svg')
                 .contacts-column-contact.
                   Россия, Республика Татарстан, Зеленодольский р-н, Раифский монастырь 422537
-
             .footer__column.footer-links-column
               .footer-links-column__apple-links
                 .apple-links
