@@ -207,6 +207,7 @@ h3 {
   font-size: 1.8em;
   text-decoration: none;
   color: #171717;
+  cursor: pointer;
 }
 
 .hero {
@@ -415,6 +416,10 @@ h3 {
   max-width: 35em;
 }
 
+.video__music {
+  margin-right: -1em;
+}
+
 .video__link {
   display: block;
 }
@@ -422,6 +427,9 @@ h3 {
 .video__img {
   position: relative;
   width: 100%;
+}
+
+.video__img-about {
   margin-top: 2em;
 }
 
@@ -473,26 +481,24 @@ h3 {
 }
 
 .music-page__albums {
-  flex: 1 1 0;
+  margin: 2em 1em 0 0;
 }
 
 .music-page__info {
   flex: 1 1 0;
-  margin: 1em 0;
-}
-
-.albums {
-  margin: 2em 0;
+  margin: 1em 0 1em -1em;
+  padding-left: 1em;
 }
 
 .album {
   display: flex;
   flex-direction: row;
   margin-bottom: 2em;
+  margin-right: 3em;
 }
 
 .album__cover {
-  max-width: 158px;
+  max-width: 120px;
   flex: 0 0 auto;
 }
 
@@ -515,8 +521,19 @@ h3 {
   white-space: nowrap;
 }
 
-.music-article {
-  margin: 0;
+.music__article {
+  margin: 1em 0;
+  display: block;
+}
+
+.music__article--hl {
+  color: #ac8c4c;
+}
+
+.music__playlist {
+  border-radius: 1em;
+  margin-top: 1em;
+  max-height: 30em;
 }
 
 @media (min-width: 48em) {
