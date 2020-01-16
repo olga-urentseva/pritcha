@@ -454,11 +454,69 @@ h3 {
 }
 
 .video--enabled {
-  cursor: pointer ;
+  cursor: pointer;
 }
 
 .video--enabled .video__button {
   display: block;
+}
+
+.apple-link-box {
+  background-color: #212121;
+  border-radius: 1em;
+}
+
+.music-page {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.music-page__albums {
+  flex: 1 1 0;
+}
+
+.music-page__info {
+  flex: 1 1 0;
+  margin: 1em 0;
+}
+
+.albums {
+  margin: 2em 0;
+}
+
+.album {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2em;
+}
+
+.album__cover {
+  max-width: 158px;
+  flex: 0 0 auto;
+}
+
+.album__cover-img {
+  width: 100%;
+  border-radius: 1em;
+}
+
+.album__information {
+  flex: 1 1 auto;
+  margin-left: 1em;
+}
+
+.album__title, .album__description {
+  margin: 0 0 0.5em 0;
+  line-height: 0.9em;
+}
+
+.album__buy-button {
+  white-space: nowrap;
+}
+
+.music-article {
+  margin: 0;
 }
 
 @media (min-width: 48em) {
