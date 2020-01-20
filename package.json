@@ -6,12 +6,18 @@
   "license": "UNLICENSED",
   "private": true,
   "scripts": {
-    "start": "run-p build:views serve",
-    "build:views": "pug -w -o public src/pages",
-    "serve": "cd public && http-server"
+    "start": "npm-run-all build:styles --parallel watch serve",
+    "serve": "cd public && http-server",
+    "build": "run-p build:views build:styles",
+    "watch": "run-p watch:views watch:styles",
+    "build:views": "pug -o public src/pages",
+    "build:styles": "node-sass -o public/styles src/styles",
+    "watch:views": "pug -w -o public src/pages",
+    "watch:styles": "node-sass -w -o public/styles src/styles"
   },
   "devDependencies": {
     "http-server": "^0.12.0",
+    "node-sass": "^4.13.1",
     "npm-run-all": "^4.1.5",
     "pug-cli": "^1.0.0-alpha6"
   }
