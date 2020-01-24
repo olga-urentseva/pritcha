@@ -1,0 +1,46 @@
+@use "../variables";
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+}
+
+.hero__info {
+  flex: 1 1 25em;
+}
+
+.hero-info__title {
+  font-size: 5em;
+  text-transform: uppercase;
+  color: variables.$color-primary;
+}
+
+.hero__img {
+  width: 100%;
+  max-width: 50em;
+  flex: 1 1 auto;
+}
+
+.delimiter-after-hero {
+  margin: 0;
+  border: none;
+  border-top: 1px solid variables.$color-secondary; // todo: lighter
+  position: relative;
+  overflow: visible;
+}
+
+.delimiter-after-hero::before {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2.5em;
+  bottom: 100%;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.04) 0%,
+      rgba(196, 196, 196, 0) 100%
+  );
+}

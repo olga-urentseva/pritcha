@@ -1,0 +1,14 @@
+.contact {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1em;
+}
+
+.contact__icon {
+  margin-right: 1em;
+}
+
+.contact__text {
+  display: flex;
+  align-items: center;
+}

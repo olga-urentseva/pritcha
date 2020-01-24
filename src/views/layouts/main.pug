@@ -7,7 +7,7 @@ html(lang='ru')
     title Притча :: Вокальный квартет Раифского Богородицкого монастыря
     meta(name='viewport' content='width=device-width,initial-scale=1')
     meta(name='keywords' content='притча, вокальный квартет, раифский монастырь, раифа')
-    link(rel='stylesheet' href='/styles/index.css')
+    link(rel='stylesheet' href='/styles/main.css')
   body
     header.header.header--collapsed
       .container
@@ -54,21 +54,11 @@ html(lang='ru')
           .footer__columns.footer-columns
             .footer__column.footer-info-column
               img(src='/pritcha-logo.svg' alt='Логотип квартета Притча')
-              h3.left-column__tittle.
+              h3.footer-left-column__title.
                 Вокальный квартет Раифского Богородицкого мужского монастыря
             .footer__column.footer-contacts-column
-              h3.contacts-column__title Контакты
-              .contacts-column__contact.right-column__phone
-                img.contacts-column-icon(src='/call-icon.svg')
-                .contacts-column-contact.
-                  +791769656 (руководитель квартета о. Сергий)
-              .contacts-column__contact.right-column__mail
-                img.contacts-column-icon(src='/mail-icon.svg')
-                .contacts-column-contact pritcha@mail.ru
-              .contacts-column__contact.right-column__map
-                img.contacts-column-icon(src='/map-icon.svg')
-                .contacts-column-contact.
-                  Россия, Республика Татарстан, Зеленодольский р-н, Раифский монастырь 422537
+              h3.footer-contacts-column__title Контакты
+              include ../components/contacts.pug
             .footer__column.footer-links-column
               .footer-links-column__apple-links
                 .apple-links

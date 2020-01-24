@@ -1,0 +1,24 @@
+@use '../variables';
+
+.apple-links__apple-link {
+  background-repeat: no-repeat;
+  width: 158px;
+  height: 45px;
+  background-size: cover;
+  display: inline-block;
+  overflow: hidden;
+  margin: 0.5em;
+}
+
+.apple-link-listen {
+  background-image: url("https://linkmaker.itunes.apple.com/en-us/badge-lrg.svg?releaseDate=&kind=artist&bubble=apple_music");
+}
+
+.apple-link-watch {
+  background-image: url("https://linkmaker.itunes.apple.com/en-us/badge-lrg.svg?releaseDate=2012-09-01&kind=musicvideo&bubble=apple_music");
+}
+
+.apple-link-box {
+  background-color: variables.$color-secondary; // todo: lighter
+  border-radius: 1em;
+}

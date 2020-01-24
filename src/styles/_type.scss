@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "SPSL New Cyrillic";
+  src: url(/spsl-new-cyrillic.woff2) format("woff2");
+  src: url(/spsl-new-cyrillic.woff) format("woff");
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "SPSL New Cyrillic", serif;
+  font-weight: 100;
+}
+
+h2 {
+  font-size: 2em;
+  line-height: 1.2em;
+}
+
+h3 {
+  font-size: 1.5em;
+  line-height: 1em;
+}

@@ -1,0 +1,58 @@
+.video {
+  display: block;
+  position: relative;
+  max-width: 35em;
+}
+
+.video__music {
+  margin-right: -1em;
+}
+
+.video__link {
+  display: block;
+}
+
+.video__img {
+  position: relative;
+  width: 100%;
+}
+
+.video__img-about {
+  margin-top: 2em;
+}
+
+.video__button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 68px;
+  height: 48px;
+  border: none;
+  background-color: transparent;
+  transform: translate(-50%, -50%);
+  padding: 0;
+  display: none;
+}
+
+.video__button-shape {
+  fill: #212121;
+  fill-opacity: 0.8;
+}
+
+.video:hover .video__button-shape,
+.video__button:focus .video__button-shape {
+  fill: #ff0000;
+  fill-opacity: 1;
+}
+
+.video__button-icon {
+  fill: #ffffff;
+}
+
+.video--enabled {
+  cursor: pointer;
+}
+
+.video--enabled .video__button {
+  display: block;
+}
