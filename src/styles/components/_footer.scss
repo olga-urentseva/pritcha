@@ -1,3 +1,4 @@
+@use "sass:color";
 @use "../variables";
 
 .footer {
@@ -5,7 +6,7 @@
 }
 
 .footer__first-line {
-  background-color: variables.$color-secondary; // todo: lighter
+  background-color: variables.$color-secondary-light;
 }
 
 .footer__columns {
@@ -24,7 +25,7 @@
 }
 
 .footer-left-column__title {
-  color: variables.$color-text; // todo: darker
+  color: variables.$color-text;
 }
 
 .apple-links {
@@ -36,13 +37,17 @@
 }
 
 .footer__copyright {
-  color: variables.$color-text; // todo: darker than left column title
+  color: color.scale(variables.$color-text, $lightness: -40%);
   padding: 2em 0 1em 0;
 }
 
 .footer-contacts-column__title {
-  color: variables.$color-primary; // todo: lighter
+  color: variables.$color-primary;
   margin: 0 0 1em 0;
+}
+
+.footer-contacts-column {
+  font-weight: bold;
 }
 
 @media (min-width: variables.$breakpoint) {

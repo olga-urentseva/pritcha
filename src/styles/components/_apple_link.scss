@@ -1,4 +1,4 @@
-@use '../variables';
+@use "../variables";
 
 .apple-links__apple-link {
   background-repeat: no-repeat;
@@ -19,6 +19,6 @@
 }
 
 .apple-link-box {
-  background-color: variables.$color-secondary; // todo: lighter
+  background-color: variables.$color-secondary-light;
   border-radius: 1em;
 }

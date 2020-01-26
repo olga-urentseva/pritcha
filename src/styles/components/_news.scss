@@ -1,3 +1,4 @@
+@use "sass:color";
 @use "../variables";
 
 .newses__title {
@@ -34,7 +35,7 @@
 .newses__all-link {
   padding: 0.5em;
   margin: 0 -0.5em 0 -0.5em;
-  color: variables.$color-secondary; // todo: find the light color version
+  color: color.scale(variables.$color-secondary, $lightness: 1%);
   text-decoration: none;
   font-family: "SPSL New Cyrillic", serif;
   font-size: 1.5em;

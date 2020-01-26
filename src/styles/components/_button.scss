@@ -1,3 +1,4 @@
+@use "sass:color";
 @use "../variables";
 
 .button {
@@ -8,13 +9,13 @@
   font-family: "SPSL New Cyrillic", serif;
   font-size: 1.4em;
   text-decoration: none;
-  color: variables.$color-secondary; // todo: lighter
+  color: variables.$color-secondary-light;
   cursor: pointer;
   display: inline-block;
 }
 
 .button:hover, .button:focus {
-  box-shadow: 0 0.2em 0.5em -0.2em variables.$color-text; // todo: set opacity to 0.6
+  box-shadow: 0 0.2em 0.5em -0.2em variables.$color-text;
 }
 
 .button--big {
