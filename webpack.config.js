@@ -6,16 +6,18 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const isDev = process.env.NODE_ENV === "development";
 
-const pageNames = fs.readdirSync("./src/views/pages/");
+const pageNames = fs
+  .readdirSync("./src/views/pages/")
+  .map((pageName) => pageName.replace(".pug", ""));
 
 const entryPointsForPages = pageNames
   .filter((pageName) =>
-    fs.readdirSync(`./src/views/pages/${pageName}`).includes("script.js")
+    fs.readdirSync(`./src/scripts`).includes(`${pageName}.js`)
   )
   .reduce(
     (acc, pageName) => ({
       ...acc,
-      [pageName]: `./views/pages/${pageName}/script.js`,
+      [pageName]: `./scripts/${pageName}.js`,
     }),
     {}
   );
@@ -27,7 +29,7 @@ const entryHtmlPlugins = pageNames.map((pageName) => {
   }
   return new HtmlWebpackPlugin({
     filename: pageName + ".html",
-    template: `./views/pages/${pageName}/template.pug`,
+    template: `./views/pages/${pageName}.pug`,
     chunks,
   });
 });

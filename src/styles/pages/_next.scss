@@ -1,11 +1,16 @@
 @use "../variables";
 
+.concerts__wrapper {
+  margin: 0 -3em;
+}
+
 .no-concerts {
-  display: none;
+  display: block;
+  margin: 3em;
 }
 
 .concerts__page {
-  display: flex;
+  display: none;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -23,9 +28,9 @@
   margin-bottom: 2em;
 }
 
-.concert__information {
-  max-width: 38em;
-}
+// .concert__information {
+//   max-width: 38em;
+// }
 
 .concert-information__place {
   font-size: 1.5em;
@@ -44,15 +49,13 @@
 }
 
 .concerts-page__information {
-  flex: 1 1 19em;
-  margin: 0 1rem;
+  margin: 3em;
 }
 
 .concerts-page-information__article {
   font-size: 1em;
-  color: variables.$color-text;
+  color: variables.$color-text-dark;
   display: inline-block;
-  margin: 0;
 }
 
 .concerts-page__quote {
