@@ -7,13 +7,11 @@
 }
 
 .music-page__albums {
-  margin: 2em 1em 0 0;
+  margin: 1em;
 }
 
-.music-page__info {
+.second-column {
   flex: 1 1 0;
-  margin: 1em 0 1em -1em;
-  padding-left: 1em;
 }
 
 .album {
@@ -38,7 +36,8 @@
   margin-left: 1em;
 }
 
-.album__title, .album__description {
+.album__title,
+.album__description {
   margin: 0 0 1rem 0;
   line-height: 0.9em;
 }
@@ -52,7 +51,7 @@
 }
 
 .music__article {
-  margin: 1em 0;
+  margin-bottom: 1em;
   display: block;
   font-size: 1em;
   color: variables.$color-text;
@@ -68,4 +67,8 @@
   margin-top: 1em;
   margin-right: 1em;
   max-height: 30em;
+}
+
+.apple-link-box {
+  margin: 2em 0;
 }

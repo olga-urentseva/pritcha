@@ -4,8 +4,10 @@
   max-width: 35em;
 }
 
-.video__music {
-  margin-right: -1em;
+.video::after {
+  display: block;
+  content: "";
+  padding-top: 56.25%;
 }
 
 .video__link {
@@ -13,8 +15,10 @@
 }
 
 .video__img {
-  position: relative;
+  position: absolute;
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .video__img-about {
@@ -31,7 +35,7 @@
   background-color: transparent;
   transform: translate(-50%, -50%);
   padding: 0;
-  display: none;
+  display: block;
 }
 
 .video__button-shape {
