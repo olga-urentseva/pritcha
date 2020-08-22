@@ -1,0 +1,76 @@
+@use "../../styles/variables";
+
+.music-page {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.music-page__albums {
+  margin-top: 1em;
+}
+
+.second-column {
+  flex: 1 1 0;
+}
+
+.album {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2em;
+  margin-right: 3em;
+}
+
+.album__cover {
+  max-width: 120px;
+  flex: 0 0 auto;
+}
+
+.album__cover-img {
+  width: 100%;
+  border-radius: 1em;
+}
+
+.album__information {
+  flex: 1 1 auto;
+  margin-left: 1em;
+}
+
+.album__title,
+.album__description {
+  margin: 0 0 1rem 0;
+  line-height: 0.9em;
+}
+
+.album__buy-button {
+  white-space: nowrap;
+}
+
+.music-page__info {
+  flex: 1 1 20em;
+}
+
+.music__article {
+  margin-bottom: 1em;
+  display: block;
+  font-size: 1em;
+  color: variables.$color-text;
+}
+
+.music__article--hl {
+  color: variables.$color-primary;
+  font-size: 1em;
+}
+
+.music__playlist {
+  border-radius: 1em;
+  margin-top: 1em;
+  margin-right: 1em;
+  max-height: 30em;
+}
+
+.apple-link-box {
+  margin: 2em 0;
+  background-color: variables.$color-secondary-light;
+  border-radius: 1em;
+}

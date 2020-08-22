@@ -1,0 +1,61 @@
+@use "sass:color";
+@use "../../styles/variables";
+
+.footer {
+  flex: 0 0 auto;
+}
+
+.footer__first-line {
+  background-color: variables.$color-secondary-light;
+}
+
+.footer__columns {
+  margin: -1em;
+  padding-top: 1.5em;
+}
+
+.footer-columns {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__column {
+  flex: 1 1 0;
+  margin: 1em;
+}
+
+.footer-left-column__title {
+  color: variables.$color-text;
+}
+
+.apple-links {
+  margin: -0.5em;
+}
+
+.footer-links-column__apple-links {
+  margin-bottom: 1em;
+}
+
+.footer__copyright {
+  color: color.scale(variables.$color-text, $lightness: -40%);
+  padding: 2em 0 1em 0;
+}
+
+.footer-contacts-column__title {
+  color: variables.$color-primary;
+  margin: 0 0 1em 0;
+}
+
+.footer-contacts-column {
+  font-weight: bold;
+}
+
+@media (min-width: variables.$breakpoint) {
+  .footer-columns {
+    flex-direction: row;
+  }
+
+  .footer-links-column {
+    text-align: right;
+  }
+}

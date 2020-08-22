@@ -1,0 +1,16 @@
+block variables
+  - var page = null
+doctype html
+html(lang='ru')
+  head
+    meta(charset='UTF-8')
+    title Притча :: Вокальный квартет Раифского Богородицкого монастыря
+    meta(name='viewport' content='width=device-width,initial-scale=1')
+    meta(name='keywords' content='притча, вокальный квартет, раифский монастырь, раифа')
+  body
+    include ../header/template.pug
+    main.content
+      block content
+    include ../footer/template.pug
+
+

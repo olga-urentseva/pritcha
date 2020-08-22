@@ -6,14 +6,8 @@
   "license": "UNLICENSED",
   "private": true,
   "scripts": {
-    "start": "run-p watch serve",
-    "start:dev": "webpack-dev-server",
-    "build": "webpack",
-    "watch": "run-p watch:views watch:styles",
-    "build:views": "pug -o public src/views/pages",
-    "build:styles": "sass src/styles:public/styles",
-    "watch:views": "pug -w -o public src/views/pages",
-    "watch:styles": "sass --watch src/styles:public/styles"
+    "start": "webpack-dev-server",
+    "build": "webpack"
   },
   "devDependencies": {
     "clean-webpack-plugin": "^3.0.0",

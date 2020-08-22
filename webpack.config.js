@@ -7,30 +7,29 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const isDev = process.env.NODE_ENV === "development";
 
 const entryPointsForPages = fs
-  .readdirSync(`./src/entrypoints`)
-  .map((file) => file.replace(".js", ""))
+  .readdirSync(`./src/pages`)
+  .filter((pageName) =>
+    fs.readdirSync(`./src/pages/${pageName}`).includes("script.js")
+  )
   .reduce(
-    (acc, file) => ({
+    (acc, pageName) => ({
       ...acc,
-      [file]: `./entrypoints/${file}.js`,
+      [pageName]: `./pages/${pageName}/script.js`,
     }),
     {}
   );
 
-const entryHtmlPlugins = fs
-  .readdirSync("./src/views/pages/")
-  .map((pageName) => pageName.replace(".pug", ""))
-  .map((pageName) => {
-    const chunks = ["main"];
-    if (pageName in entryPointsForPages) {
-      chunks.push(pageName);
-    }
-    return new HtmlWebpackPlugin({
-      filename: pageName + ".html",
-      template: `./views/pages/${pageName}.pug`,
-      chunks,
-    });
+const entryHtmlPlugins = fs.readdirSync("./src/pages/").map((pageName) => {
+  const chunks = ["main"];
+  if (pageName in entryPointsForPages) {
+    chunks.push(pageName);
+  }
+  return new HtmlWebpackPlugin({
+    filename: pageName + ".html",
+    template: `./pages/${pageName}/template.pug`,
+    chunks,
   });
+});
 
 module.exports = {
   context: path.resolve(__dirname, "src"),

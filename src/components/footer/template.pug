@@ -1,0 +1,18 @@
+footer.footer
+  .footer__first-line
+    .container
+      .footer__columns.footer-columns
+        .footer__column.footer-info-column
+          img(src=require('../../images/pritcha-logo.svg').default alt='Логотип квартета Притча')
+          h3.footer-left-column__title.
+            Вокальный квартет Раифского Богородицкого мужского монастыря
+        .footer__column.footer-contacts-column
+          h3.footer-contacts-column__title Контакты
+          include ../contacts/template.pug
+        .footer__column.footer-links-column
+          .footer-links-column__apple-links
+            include ../apple_links/template.pug
+          include ../socials/template.pug
+  .footer__second-line
+    .container
+      .footer__copyright Квартет “Притча” © 2019
