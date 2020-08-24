@@ -3,6 +3,7 @@ const fs = require("fs");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
 
 const isDev = process.env.NODE_ENV === "development";
 
@@ -48,6 +49,9 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: "[name].[contenthash].css",
     }),
+    new CopyPlugin({
+      patterns: [{ from: "static", to: "../dist" }],
+    }),
   ],
   devServer: {
     port: 4200,
@@ -64,10 +68,6 @@ module.exports = {
         test: /\.(png|jpg|svg|jpeg|woff2|woff)$/i,
         use: ["file-loader"],
       },
-      // {
-      //   test: /\.html$/i,
-      //   loader: "html-loader",
-      // },
       {
         test: /\.pug$/i,
         use: ["pug-loader"],
