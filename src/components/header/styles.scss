@@ -118,7 +118,7 @@
 }
 
 .header-menu__link {
-  display: block;
+  display: inline-block;
   white-space: nowrap;
   color: variables.$color-text;
   text-decoration: none;
@@ -136,7 +136,7 @@
   width: calc(100% - 2rem);
   background-color: variables.$color-primary;
   position: absolute;
-  top: 100%;
+  top: calc(100% - 0.5rem);
   left: 1rem;
 }
 
