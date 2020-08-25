@@ -1,3 +1,5 @@
+include ../header/template.pug
+
 block variables
   - var page = null
 doctype html
@@ -8,7 +10,7 @@ html(lang='ru')
     meta(name='viewport' content='width=device-width,initial-scale=1')
     meta(name='keywords' content='притча, вокальный квартет, раифский монастырь, раифа')
   body
-    include ../header/template.pug
+    +header(page)
     main.content
       block content
     include ../footer/template.pug
