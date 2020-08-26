@@ -5,11 +5,11 @@
 }
 
 .no-concerts {
-  display: block;
+  display: none;
 }
 
 .concerts {
-  display: none;
+  display: flex;
   justify-content: space-between;
 }
 
@@ -36,10 +36,6 @@
   margin: 1em 0;
 }
 
-.concerts-page__information {
-  flex: 1 1 auto;
-}
-
 .concerts-page-information__article {
   font-size: 1em;
   color: variables.$color-text-dark;
@@ -63,8 +59,6 @@
   margin-top: 1em;
 }
 
-// lalalala
-
 @media (min-width: variables.$breakpoint) {
   .concerts__wrapper {
     display: flex;
@@ -77,7 +71,11 @@
     margin: 3em;
   }
 
+  .concerts-page__concerts {
+    width: 90%;
+  }
+
   .concerts-page__information {
-    max-width: 35em;
+    width: 80%;
   }
 }
