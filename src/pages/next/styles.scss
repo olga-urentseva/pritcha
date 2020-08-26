@@ -62,20 +62,21 @@
 @media (min-width: variables.$breakpoint) {
   .concerts__wrapper {
     display: flex;
-    margin: -3em;
+    // margin: -2em;
   }
 
-  .concerts-page__information,
-  .concerts__page,
-  .no-concerts {
-    margin: 3em;
-  }
+  // .concerts-page__information,
+  // .concerts__page,
+  // .no-concerts {
+  //   margin: 2em;
+  // }
 
   .concerts-page__concerts {
-    width: 90%;
+    min-width: 20em;
   }
 
   .concerts-page__information {
-    width: 80%;
+    min-width: 20em;
+    margin-left: 3em;
   }
 }
