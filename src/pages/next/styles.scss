@@ -5,11 +5,11 @@
 }
 
 .no-concerts {
-  display: none;
+  display: block;
 }
 
 .concerts {
-  display: flex;
+  display: none;
   justify-content: space-between;
 }
 
@@ -62,14 +62,11 @@
 @media (min-width: variables.$breakpoint) {
   .concerts__wrapper {
     display: flex;
-    // margin: -2em;
   }
 
-  // .concerts-page__information,
-  // .concerts__page,
-  // .no-concerts {
-  //   margin: 2em;
-  // }
+  .no-concerts {
+    min-width: 25em;
+  }
 
   .concerts-page__concerts {
     min-width: 20em;
