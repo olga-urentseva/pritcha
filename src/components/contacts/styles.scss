@@ -1,13 +1,18 @@
 .contact {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  margin: -1em;
 }
 
-.contact__icon {
-  margin-right: 1em;
+.contact-icon__wrapper {
+  margin: 1em;
+}
+
+.contact-text__wrapper {
+  margin: 1em 0em;
 }
 
 .contact__text {
-  display: flex;
-  align-items: center;
+  font-size: 1em;
 }
