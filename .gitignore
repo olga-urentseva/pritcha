@@ -3,3 +3,4 @@ yarn-error.log
 public/*.html
 public/styles/
 dist/
+.env

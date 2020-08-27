@@ -1,4 +1,5 @@
 extends ../../components/layout/template.pug
+include ../../components/news/template.pug
 
 block content
   .container
@@ -11,9 +12,7 @@ block content
   hr.delimiter-after-hero
   .newses
     .container
-      include ../../components/news/template.pug
+      +newses(newses)
     footer.newses__footer
       .container
         a.newses__all-link(href='news.html') Ко всем новостям
-
-

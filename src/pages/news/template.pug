@@ -1,4 +1,5 @@
 extends ../../components/layout/template.pug
+include ../../components/news/template.pug
 
 block variables
   - var page = 'news'
@@ -6,5 +7,4 @@ block variables
 block content
   .container
     h1 Новости
-    include ../../components/news/template.pug
-
+    +newses(newses)
