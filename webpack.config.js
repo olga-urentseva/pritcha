@@ -8,8 +8,6 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
 const fetchNewses = require("./src/build/fetch_newses");
 
-const isDev = process.env.NODE_ENV === "development";
-
 const entryPointsForPages = fs
   .readdirSync(`./src/pages`)
   .filter((pageName) =>
@@ -67,7 +65,6 @@ module.exports = async () => {
     ],
     devServer: {
       port: 4200,
-      hot: isDev,
     },
 
     module: {
