@@ -81,6 +81,10 @@ module.exports = async () => {
           test: /\.pug$/i,
           use: ["pug-loader"],
         },
+        {
+          test: /\.js$/i,
+          use: ["babel-loader"],
+        },
       ],
     },
   };
