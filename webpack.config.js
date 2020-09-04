@@ -74,7 +74,7 @@ module.exports = async () => {
           use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
         },
         {
-          test: /\.(png|jpg|svg|jpeg|woff2|woff)$/i,
+          test: /\.(png|jpg|svg|jpeg|woff2|woff|webp)$/i,
           use: ["file-loader"],
         },
         {
