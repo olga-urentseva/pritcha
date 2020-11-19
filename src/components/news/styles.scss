@@ -27,8 +27,12 @@
   line-height: 1.5em;
 }
 
-.news__date {
+.news-date__wrapper {
   margin: 0.5em 0;
+}
+
+.news-date__text {
+  font-size: 1em;
   text-align: right;
   color: variables.$color-primary;
 }

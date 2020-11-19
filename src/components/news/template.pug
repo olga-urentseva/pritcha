@@ -4,4 +4,5 @@ mixin newses(newses)
     .newses__news.news
       p.news__name= news.title
       p.news__text= news.text
-      .news__date Дата публикации: #{news.date}
+      .news-date__wrapper
+        p.news-date__text Дата публикации: #{news.date}
