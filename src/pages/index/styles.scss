@@ -44,3 +44,23 @@
     rgba(196, 196, 196, 0) 100%
   );
 }
+
+.temp__video {
+  margin: 2em 1rem;
+}
+
+.temp__content {
+  margin: -1rem;
+}
+
+.temp-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.congrats__text {
+  margin: 1rem;
+  font-size: 4em;
+}
