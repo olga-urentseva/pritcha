@@ -46,21 +46,25 @@
 }
 
 .temp__video {
+  flex: 2 1 60%;
   margin: 2em 1rem;
 }
 
-.temp__content {
+.temp {
   margin: -1rem;
-}
-
-.temp-content {
+  margin-bottom: 1em;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
 
+.temp__text {
+  flex: 2 1 15em;
+  margin: 0 1em 1em 1em;
+}
+
 .congrats__text {
-  margin: 1rem;
   font-size: 4em;
+  margin: 0;
 }
