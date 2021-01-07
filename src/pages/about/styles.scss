@@ -1,5 +1,13 @@
 @use "../../styles/variables";
 
+.cast__wrapper {
+  margin: 2em 0;
+}
+
 .subtitle {
   color: variables.$color-primary;
+}
+
+.festivals__wrapper {
+  margin-top: 3em;
 }
