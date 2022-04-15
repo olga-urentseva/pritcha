@@ -1,4 +1,4 @@
 import "./styles.scss";
 import "../contacts";
-import "../apple_links";
+import "../yandex_link";
 import "../socials";
