@@ -1,3 +1,3 @@
 import "./styles.scss";
-import "../../components/apple_links";
+import "../../components/yandex_link";
 import "../../components/video";

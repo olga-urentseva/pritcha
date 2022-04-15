@@ -1,13 +1,16 @@
 @use "../../styles/variables";
 
-.apple-links__apple-link {
+.link {
   background-repeat: no-repeat;
-  width: 158px;
-  height: 45px;
+  width: 12em;
+  height: 3.2em;
   background-size: cover;
   display: inline-block;
   overflow: hidden;
-  margin: 0.5em;
+  margin: 0;
+  border: 0.1em solid variables.$color-text;
+  border-radius: 1em;
+
 }
 
 .apple-link-listen {
@@ -16,4 +19,9 @@
 
 .apple-link-watch {
   background-image: url("https://linkmaker.itunes.apple.com/en-us/badge-lrg.svg?releaseDate=2012-09-01&kind=musicvideo&bubble=apple_music");
+}
+
+.yandex-link {
+  background-image: url("https://yastatic.net/s3/doc-binary/freeze/ru/zen/f95dafd184593be2dcbe69aa51be3236e5193799.png");
+  flex: none;
 }
