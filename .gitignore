@@ -4,3 +4,4 @@ public/*.html
 public/styles/
 dist/
 .env
+.idea/

@@ -1,4 +1,5 @@
 const https = require("https");
+const marked = require("marked");
 
 const SPREADSHEET_ID = "1BevqrPTNNPBrMB_nEsvLYk2wXD-CPiHVi3rzzoGwXq8";
 const API_KEY = process.env.GOOGLE_SPREADSHEETS_API_KEY;
@@ -28,7 +29,10 @@ async function fetchNewses() {
     `https://sheets.googleapis.com/v4/spreadsheets/${SPREADSHEET_ID}/values/newses!A2:C?key=${API_KEY}`
   );
 
-  return rows.reverse().map(([title, text, date]) => ({ title, text, date }));
+  return rows.reverse().map(([title, text, date]) => {
+    const textHTML = marked.parse(text);
+    return { title, textHTML, date };
+  });
 }
 
 module.exports = fetchNewses;
