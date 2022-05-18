@@ -10,6 +10,11 @@
   margin-bottom: 1.5em;
 }
 
+.newses__news a:link,
+.newses__news a:visited {
+  color: variables.$color-primary;
+}
+
 .news__name {
   margin: -0.5em -0.5em;
   font-family: "SPSL New Cyrillic", serif;
@@ -20,11 +25,6 @@
   text-decoration: none;
   color: variables.$color-text;
   padding: 0.5em;
-}
-
-.news__text {
-  margin: 0.5em 0;
-  line-height: 1.5em;
 }
 
 .news-date__wrapper {
