@@ -1,16 +1,20 @@
 @use "../../styles/variables";
 
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
 .link {
-  background-repeat: no-repeat;
-  width: 12em;
-  height: 3.2em;
-  background-size: cover;
   display: inline-block;
+  background-repeat: no-repeat;
+  width: 10em;
+  height: 2.6em;
+  background-size: cover;
   overflow: hidden;
-  margin: 0;
   border: 0.1em solid variables.$color-text;
   border-radius: 1em;
-
 }
 
 .apple-link-listen {
@@ -23,5 +27,15 @@
 
 .yandex-link {
   background-image: url("https://yastatic.net/s3/doc-binary/freeze/ru/zen/f95dafd184593be2dcbe69aa51be3236e5193799.png");
+  flex: none;
+}
+
+.rutube-link {
+  background-image: url("../../images/rutube-icon-full.svg");
+  flex: none;
+}
+
+.vk-link {
+  background-image: url("../../images/vkontakte-icon-full.svg");
   flex: none;
 }
