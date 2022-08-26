@@ -1,3 +1,3 @@
 import "./styles.scss";
-import "../../components/yandex_link";
+import "../../components/social_button_links";
 import "../../components/video";
