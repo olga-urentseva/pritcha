@@ -1,15 +1,17 @@
 @use "../../styles/variables";
 
 .concerts--wrapper {
-  display: block;
+  display: flex;
+  flex-direction: column;
 }
 
 .no-concerts {
   display: block;
+  color: variables.$color-primary;
 }
 
 .concerts {
-  display: none;
+  display: block;
   justify-content: space-between;
 }
 
@@ -26,9 +28,9 @@
   margin-bottom: 0.5rem;
 }
 
-.concert-information__date {
+.concert-information__description {
   font-size: 1em;
-  margin-bottom: 0.5rem;
+  margin: 0.5rem 0;
 }
 
 .concert__buy {
