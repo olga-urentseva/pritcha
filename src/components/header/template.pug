@@ -35,4 +35,10 @@ mixin header(current_page)
                   a.header-menu__link.header-menu__link--active(href='/contacts.html') Контакты
                 - else
                   a.header-menu__link(href='/contacts.html') Контакты
+              li
+                -if (page === 'donate')
+                  a.header-menu__link.header-menu__link--active(href='/donate.html') Поддержать коллектив
+                - else
+                  a.header-menu__link(href='/donate.html') Поддержать коллектив
+
           a.button.button--big.header__button(href='https://zen.yandex.ru/pritcha?lang=ru' target='_blank' aria-label="Слушать музыку онлайн" rel="noopener") Слушать онлайн
