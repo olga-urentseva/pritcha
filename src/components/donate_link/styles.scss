@@ -1,0 +1,19 @@
+@use "../../styles/variables";
+
+.link-donate {
+  border: none;
+  color: variables.$color-text;
+  text-decoration: none;
+  font-size: 1.2em;
+  background-color: variables.$color-primary;
+  display: inline-block;
+  border-radius: 1em;
+  font-weight: 600;
+  padding: 0.2em 1em;
+  margin: 1em 0;
+}
+
+.link-donate:hover,
+.link-donate:focus {
+  box-shadow: 0 0.2em 0.5em -0.2em variables.$color-text;
+}

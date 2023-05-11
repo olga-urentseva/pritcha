@@ -9,6 +9,7 @@ block content
         h2.hero-info__subtitle Вокальный квартет Раифского Богородицкого мужского монастыря
         h3 Смотрите и слушайте нас в социальных сетях
         include ../../components/social_button_links/template.pug
+        include ../../components/donate_link/template.pug 
       picture
         source.hero__img(srcset=require("../../images/pritcha-main.webp").default type="image/webp" alt='Фото всех членов вокального квартета Притча.')
         img.hero__img(src=require('../../images/pritcha-main.png').default alt='Фото всех членов вокального квартета Притча.')

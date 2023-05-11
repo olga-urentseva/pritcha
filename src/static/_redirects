@@ -11,3 +11,4 @@ http://pritcha.info/* https://pritcha.info/:splat 301!
 /music.html /music 301!
 /news.html /news 301!
 /next.html /next 301!
+/donate.html /next 301!
