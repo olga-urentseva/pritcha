@@ -1,0 +1,44 @@
+@use "../../styles/variables";
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  margin: -1em 0;
+}
+
+.link {
+  display: inline-block;
+  background-repeat: no-repeat;
+  width: 10em;
+  height: 2.6em;
+  background-size: cover;
+  overflow: hidden;
+  border: 0.1em solid variables.$color-text;
+  border-radius: 1em;
+  transition: transform 0.3s ease;
+
+  &:hover,
+  &:active {
+    transform: scale(1.05);
+  }
+}
+
+.vk-music {
+  background-image: url("../../images/vk-music-icon-full.svg");
+  flex: none;
+}
+
+.yandex-music {
+  background-image: url("../../images/yandex-music-icon-full.svg");
+}
+
+.vk-music,
+.yandex-music {
+  width: 12em;
+  height: 3.6em;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+}

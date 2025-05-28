@@ -15,6 +15,13 @@
   overflow: hidden;
   border: 0.1em solid variables.$color-text;
   border-radius: 1em;
+
+  transition: transform 0.3s ease;
+
+  &:hover,
+  &:active {
+    transform: scale(1.05);
+  }
 }
 
 .apple-link-listen {

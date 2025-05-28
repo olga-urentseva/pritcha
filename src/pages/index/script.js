@@ -3,3 +3,4 @@ import "../../components/social_button_links";
 import "../../components/news";
 import "../../components/video";
 import "../../components/donate_link";
+import "../../components/streaming-platforms_links";
