@@ -1,17 +1,17 @@
 @use "../../styles/variables";
 
-.links {
+.links-streaming {
   display: flex;
   flex-wrap: wrap;
-  gap: 2em;
   margin: -1em 0;
+  flex: 1 1 auto;
+  gap: 0 1em;
 }
 
 .link {
   display: inline-block;
   background-repeat: no-repeat;
-  width: 10em;
-  height: 2.6em;
+
   background-size: cover;
   overflow: hidden;
   border: 0.1em solid variables.$color-text;
@@ -35,8 +35,6 @@
 
 .vk-music,
 .yandex-music {
-  width: 12em;
-  height: 3.6em;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
