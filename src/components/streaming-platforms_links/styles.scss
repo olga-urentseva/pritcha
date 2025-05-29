@@ -4,19 +4,21 @@
   display: flex;
   flex-wrap: wrap;
   margin: -1em 0;
-  flex: 1 1 auto;
-  gap: 0 1em;
+  gap: 0 4em;
 }
 
 .link {
-  display: inline-block;
-  background-repeat: no-repeat;
-
   background-size: cover;
   overflow: hidden;
-  border: 0.1em solid variables.$color-text;
-  border-radius: 1em;
   transition: transform 0.3s ease;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  width: 100%;
+  max-width: 12em;
+  height: 2em;
 
   &:hover,
   &:active {

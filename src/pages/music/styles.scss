@@ -79,12 +79,12 @@
 
 .links {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   gap: 1em;
   padding: 0.5em;
   margin: 0 -0.5em;
+  justify-content: space-between;
 }
 
 .social-title {
