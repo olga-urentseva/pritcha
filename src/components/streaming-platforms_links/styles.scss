@@ -3,22 +3,22 @@
 .links-streaming {
   display: flex;
   flex-wrap: wrap;
-  margin: -1em 0;
-  gap: 0 4em;
+  gap: 0 2em;
 }
 
-.link {
+.streaming-link {
   background-size: cover;
   overflow: hidden;
   transition: transform 0.3s ease;
   display: inline-block;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left center;
   background-size: contain;
 
   width: 100%;
   max-width: 12em;
   height: 2em;
+  min-width: 5em;
 
   &:hover,
   &:active {
@@ -33,12 +33,4 @@
 
 .yandex-music {
   background-image: url("../../images/yandex-music-icon-full.svg");
-}
-
-.vk-music,
-.yandex-music {
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  border: none;
 }

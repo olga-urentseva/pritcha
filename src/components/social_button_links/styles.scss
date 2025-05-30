@@ -3,16 +3,16 @@
 .links-socials {
   display: flex;
   flex-wrap: wrap;
-  gap: 0 1em;
+  gap: 0 2em;
 }
 
-.link {
+.social-link {
   background-size: cover;
   overflow: hidden;
   transition: transform 0.3s ease;
   display: inline-block;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left center;
   background-size: contain;
 
   max-width: 12em;
